@@ -1,0 +1,30 @@
+### CREATE PRODUCT
+POST http://localhost:4000/api/products
+Content-Type: application/json
+
+{
+  "name":"Producto de Prueba",
+  "price": 2050
+}
+
+### GET PRODUCTS
+GET http://localhost:4000/api/products
+
+### GET PRODUCT BY ID
+GET http://localhost:4000/api/products/2
+
+### UPDATE PRODUCT BY ID
+PUT http://localhost:4000/api/products/2
+Content-Type: application/json
+
+{
+  "name":"TV Smart 55' SAMSUMG - actulizado ",
+  "price": 20050,
+  "availability":true
+}
+
+### UPDATE PRODUCT AVALILABILITY BY ID
+PATCH  http://localhost:4000/api/products/2
+
+### DELETE PRODUCT BY ID
+DELETE http://localhost:4000/api/products/3
